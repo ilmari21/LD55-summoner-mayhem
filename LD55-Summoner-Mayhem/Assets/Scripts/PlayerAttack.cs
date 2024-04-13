@@ -25,8 +25,10 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)) {
             if (usedWeapon == weapon.melee) {
+                canAttack = true;
                 usedWeapon = weapon.shooting;
             } else if (usedWeapon == weapon.shooting) {
+                canAttack = true;
                 usedWeapon = weapon.melee;
             }
         }
