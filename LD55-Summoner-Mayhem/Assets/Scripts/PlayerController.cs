@@ -7,9 +7,11 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] float moveSpeed;
+    Vector3 playerStartPos;
 
     void Start()
     {
+        playerStartPos = transform.position;
         rb = GetComponent<Rigidbody2D>(); 
     }
 
@@ -24,4 +26,7 @@ public class PlayerController : MonoBehaviour
         transform.up = lookVector - transform.position;
     }
 
+    public void ResetPlayer() {
+        transform.position = playerStartPos;
+    }
 }

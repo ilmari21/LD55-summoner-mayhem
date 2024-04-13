@@ -8,10 +8,10 @@ public class EnemyManager : MonoBehaviour
     public List<GameObject> civilians = new List<GameObject>();
     void Start()
     {
-        var civs = FindObjectsOfType<CivilianScript>();
-        foreach (var civ in civs) {
-            civilians.Add(civ.gameObject);
-        }
+        //var civs = FindObjectsOfType<CivilianScript>();
+        //foreach (var civ in civs) {
+        //    civilians.Add(civ.gameObject);
+        //}
     }
 
     public void UpdateCivilians() {

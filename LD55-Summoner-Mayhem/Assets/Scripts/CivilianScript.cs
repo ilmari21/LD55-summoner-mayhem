@@ -13,6 +13,7 @@ public class CivilianScript : MonoBehaviour, IDamageable
     {
         enemyManager = FindObjectOfType<EnemyManager>();
         health = staringHealth;
+        enemyManager.civilians.Add(gameObject);
     }
 
     void Update()
