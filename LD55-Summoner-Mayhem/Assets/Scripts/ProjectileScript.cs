@@ -6,10 +6,8 @@ public class ProjectileScript : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] int damage;
-    Rigidbody2D rb;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, 5f);
     }
 
