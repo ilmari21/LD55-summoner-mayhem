@@ -18,6 +18,8 @@ public class MinionMover : MonoBehaviour
     {
         enemyManager = FindObjectOfType<EnemyManager>();
 
+        enemyManager.enemies.Add(gameObject);
+
         agent = GetComponent<NavMeshAgent>();
 
         target = enemyManager.GetNearestCiv(transform.position);

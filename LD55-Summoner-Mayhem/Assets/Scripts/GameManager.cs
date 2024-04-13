@@ -39,12 +39,16 @@ public class GameManager : MonoBehaviour
         levelIndex++;
         midLevel = true;
         midLevelUi.SetActive(true);
+        foreach(var enemy in enemyManager.enemies) {
+            Destroy(enemy);
+        }
     }
 
     void StartNextLevel() {
         levels[levelIndex].SetActive(true);
         midLevelUi.SetActive(false);
         playerCon.ResetPlayer();
+        midLevel = false;
         Time.timeScale = 1;
         enemyManager.UpdateCivilians();
     }

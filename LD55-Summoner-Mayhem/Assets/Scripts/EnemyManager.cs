@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public List<GameObject> civilians = new List<GameObject>();
+    public List<GameObject> enemies = new List<GameObject>();
     void Start()
     {
         //var civs = FindObjectsOfType<CivilianScript>();
@@ -15,18 +16,10 @@ public class EnemyManager : MonoBehaviour
     }
 
     public void UpdateCivilians() {
-        for (int i = 0; i < civilians.Count; i++) {
-            if (civilians[i] == null) {
-                civilians.RemoveAt(i);
-            }
-        }
+        civilians.Clear();
         var civs = FindObjectsOfType<CivilianScript>();
         for (int i = 0; i < civilians.Count; i++) {
-            if (civilians.Contains(civs[i].gameObject)) {
-                continue;
-            } else {
-                civilians.Add(civs[i].gameObject);
-            }
+            civilians.Add(civs[i].gameObject);
         }
     }
 
