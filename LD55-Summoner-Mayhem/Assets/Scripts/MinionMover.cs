@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MinionMover : MonoBehaviour
 {
@@ -11,9 +12,13 @@ public class MinionMover : MonoBehaviour
 
     Rigidbody2D rb;
 
+    NavMeshAgent agent;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        agent = GetComponent<NavMeshAgent>();
 
         if (target == null) 
         { 
@@ -23,6 +28,7 @@ public class MinionMover : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = (target.transform.position - transform.position) * minionSpeed;
+        agent.SetDestination(target.transform.position);
+        //rb.velocity = (target.transform.position - transform.position) * minionSpeed;
     }
 }
