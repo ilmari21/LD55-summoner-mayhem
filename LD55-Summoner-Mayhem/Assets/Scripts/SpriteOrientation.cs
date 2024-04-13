@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class SpriteOrientation : MonoBehaviour
 {
-
-    void Awake()
-    {
-        
-    }
-
     void Update()
     {
         transform.rotation = Quaternion.identity;

@@ -38,7 +38,6 @@ public class MinionMover : MonoBehaviour
         }
 
         agent.SetDestination(target.transform.position);
-        //rb.velocity = (target.transform.position - transform.position) * minionSpeed;
         var fixPos = new Vector3(transform.position.x, transform.position.y, 0);
         transform.position = fixPos;
     }
