@@ -6,11 +6,12 @@ public class CivilianScript : MonoBehaviour, IDamageable
 {
     [SerializeField] int staringHealth;
     int health;
-
-    public List<GameObject> enemies = new List<GameObject>();
+    public int enemiesComing;
+    EnemyManager enemyManager;
 
     void Start()
     {
+        enemyManager = FindObjectOfType<EnemyManager>();
         health = staringHealth;
     }
 
@@ -18,7 +19,8 @@ public class CivilianScript : MonoBehaviour, IDamageable
     {
         if (health <= 0) {
             print("Game Over");
-            Time.timeScale = 0;
+            enemyManager.civilians.Remove(gameObject);
+            enemyManager.UpdateCivilians();
             Destroy(gameObject);
         }
     }

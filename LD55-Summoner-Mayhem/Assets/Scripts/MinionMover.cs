@@ -8,52 +8,27 @@ public class MinionMover : MonoBehaviour
     [SerializeField]
     float minionSpeed;
 
-    public GameObject target;
-
-    Rigidbody2D rb;
+    Vector3 target;
 
     NavMeshAgent agent;
 
-    public List<GameObject> civilians;
+    EnemyManager enemyManager;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        enemyManager = FindObjectOfType<EnemyManager>();
 
         agent = GetComponent<NavMeshAgent>();
 
-        var civs = FindObjectsOfType<CivilianScript>();
+        target = enemyManager.GetNearestCiv(transform.position);
 
-        foreach ( var civ in civs )
-        {
-            civilians.Add(civ.gameObject);
-        }
+        agent.SetDestination(target);
+
     }
 
     void Update()
     {
-        if (target == null)
-        {
-            FindTarget();
-        }
-
-        agent.SetDestination(target.transform.position);
         var fixPos = new Vector3(transform.position.x, transform.position.y, 0);
         transform.position = fixPos;
-    }
-
-    void FindTarget()
-    {
-        int index = -1;
-        float shortestDistance = 999999999;
-        for (int i = 0; i < civilians.Count; i++)
-        {
-            if (Vector3.Distance(transform.position, civilians[i].transform.position) < shortestDistance)
-            {
-                shortestDistance = Vector3.Distance(transform.position, civilians[i].transform.position);
-                index = i;
-            }
-        }
-        target = civilians[index];
     }
 }
