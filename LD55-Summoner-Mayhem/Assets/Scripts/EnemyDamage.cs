@@ -13,7 +13,7 @@ public class EnemyDamage : MonoBehaviour, IDamageable
 
     void Update() {
         if (health <= 0) {
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
         }    
     }
 

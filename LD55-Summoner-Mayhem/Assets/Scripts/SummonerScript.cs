@@ -6,7 +6,7 @@ public class SummonerScript : MonoBehaviour
 {
     public GameObject spawnPrefab;
     public List<GameObject> spawnList = new List<GameObject>();
-    public int maxMinions = 10;
+    public int maxMinions = 5;
     float spawnInterval = 2f;
     float spawnTimer = 0f;
     public Transform minionsFolder;
@@ -22,14 +22,27 @@ public class SummonerScript : MonoBehaviour
 
     void Update()
     {
-        spawnTimer += Time.deltaTime;
+        if (spawnList.Count < maxMinions)
+        {
+            spawnTimer += Time.deltaTime;
+        }
         if (spawnTimer > spawnInterval && spawnList.Count < maxMinions)
         {
-            var spawnPos = new Vector3(transform.position.x, transform.position.y + 1, 0);
+            var spawnPos = new Vector3(transform.position.x, transform.position.y + 1);
             var newMinion = Instantiate(spawnPrefab, spawnPos, Quaternion.identity);
             newMinion.transform.parent = minionsFolder;
             spawnList.Add(newMinion);
             spawnTimer = 0;
+        }
+        if (spawnList.Count >= maxMinions)
+        {
+            for (int i = 0; i < spawnList.Count; i++)
+            {
+                if (spawnList[i] == null)
+                {
+                    spawnList.RemoveAt(i);
+                }
+            }
         }
     }
 }
