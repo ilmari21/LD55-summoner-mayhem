@@ -21,6 +21,13 @@ public class MinionMover : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         agent = GetComponent<NavMeshAgent>();
+
+        var civs = FindObjectsOfType<CivilianScript>();
+
+        foreach ( var civ in civs )
+        {
+            civilians.Add(civ.gameObject);
+        }
     }
 
     void Update()
