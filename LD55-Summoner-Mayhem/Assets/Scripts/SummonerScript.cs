@@ -25,7 +25,7 @@ public class SummonerScript : MonoBehaviour
         spawnTimer += Time.deltaTime;
         if (spawnTimer > spawnInterval && spawnList.Count < maxMinions)
         {
-            var spawnPos = new Vector3(transform.position.x, transform.position.y + 1);
+            var spawnPos = new Vector3(transform.position.x, transform.position.y + 1, 0);
             var newMinion = Instantiate(spawnPrefab, spawnPos, Quaternion.identity);
             newMinion.transform.parent = minionsFolder;
             spawnList.Add(newMinion);

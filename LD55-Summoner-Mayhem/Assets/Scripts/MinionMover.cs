@@ -22,7 +22,7 @@ public class MinionMover : MonoBehaviour
 
         if (target == null) 
         { 
-            target = GameObject.Find("Character");
+            target = GameObject.Find("Player");
         }
     }
 
