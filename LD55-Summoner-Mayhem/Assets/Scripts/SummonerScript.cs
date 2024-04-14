@@ -14,6 +14,9 @@ public class SummonerScript : MonoBehaviour
 
     void Awake()
     {
+        if (minionsFolder == null) {
+            minionsFolder = GameObject.Find("MinionsFolder").transform;
+        }
         if (spawnPrefab == null) 
         {
             print("no prefab");
