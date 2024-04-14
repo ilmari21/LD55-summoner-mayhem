@@ -6,7 +6,7 @@ public class CivilianScript : MonoBehaviour, IDamageable
 {
     [SerializeField] int staringHealth;
     int health;
-    public int enemiesComing;
+    public List<GameObject> enemiesComing = new List<GameObject>();
     EnemyManager enemyManager;
 
     void Start()
@@ -23,6 +23,14 @@ public class CivilianScript : MonoBehaviour, IDamageable
             enemyManager.civilians.Remove(gameObject);
             enemyManager.UpdateCivilians();
             Destroy(gameObject);
+        }
+
+        for (int i = 0; i < enemiesComing.Count; i++)
+        {
+            if (enemiesComing[i] == null) 
+            { 
+                enemiesComing.RemoveAt(i);
+            }
         }
     }
 
