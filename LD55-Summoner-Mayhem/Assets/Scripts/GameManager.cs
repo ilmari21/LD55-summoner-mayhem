@@ -35,19 +35,25 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel() {
         Time.timeScale = 0;
+        playerCon.GetComponent<PlayerAttack>().canAttack = false;
         levels[levelIndex].SetActive(false);
         levelIndex++;
+        if (levelIndex >= levels.Count) {
+            Debug.Log("No more levels");
+        }
         midLevel = true;
         midLevelUi.SetActive(true);
-        foreach(var enemy in enemyManager.enemies) {
+        levels[levelIndex].SetActive(true);
+        foreach (var enemy in enemyManager.enemies) {
             Destroy(enemy);
         }
+        playerCon.ResetPlayer();
     }
 
     void StartNextLevel() {
-        levels[levelIndex].SetActive(true);
+        print(summoners.Count);
         midLevelUi.SetActive(false);
-        playerCon.ResetPlayer();
+        playerCon.GetComponent<PlayerAttack>().canAttack = true;
         midLevel = false;
         Time.timeScale = 1;
         enemyManager.UpdateCivilians();
