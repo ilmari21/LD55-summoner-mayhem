@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
@@ -10,6 +11,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     PlayerController playerCon;
     [SerializeField] float invDuration;
     float timer = 0f;
+    [SerializeField] Slider healthSlider;
 
     void Start()
     {
@@ -35,11 +37,16 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public void Damage(int damage) {
         if (playerCon.invulnerable == false) {
             health -= damage;
+            UpdateHealthBar();
         }
     }
 
     public void ResetHp() {
         health = defaultHealth;
+    }
+
+    public void UpdateHealthBar() {
+        healthSlider.value = health;
     }
 
 }

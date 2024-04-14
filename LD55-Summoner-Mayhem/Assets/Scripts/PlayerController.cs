@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
     public void ResetPlayer() {
         transform.position = playerStartPos;
         playerHp.ResetHp();
+        playerHp.UpdateHealthBar();
     }
 
     void OnCollisionEnter2D(Collision2D coll) {
