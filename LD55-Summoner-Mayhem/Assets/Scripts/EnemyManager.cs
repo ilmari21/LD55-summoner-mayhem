@@ -18,6 +18,10 @@ public class EnemyManager : MonoBehaviour
     public void UpdateCivilians() {
         civilians.Clear();
         var civs = FindObjectsOfType<CivilianScript>();
+        if (civs == null) {
+            Debug.Log("no civilians");
+            Debug.Break();
+        }
         for (int i = 0; i < civilians.Count; i++) {
             civilians.Add(civs[i].gameObject);
         }
@@ -36,6 +40,7 @@ public class EnemyManager : MonoBehaviour
                 index = i;
             }
         }
+        print("nearest civ run" + civilians[index]);
         return civilians[index];
     }
 }

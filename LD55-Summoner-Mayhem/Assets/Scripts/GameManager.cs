@@ -54,7 +54,6 @@ public class GameManager : MonoBehaviour
     }
 
     void StartNextLevel() {
-        print(summoners.Count);
         midLevelUi.SetActive(false);
         playerCon.GetComponent<PlayerAttack>().canAttack = true;
         midLevel = false;

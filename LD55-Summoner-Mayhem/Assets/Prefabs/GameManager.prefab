@@ -48,5 +48,8 @@ MonoBehaviour:
   levels:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   summoners: []
   enemyManager: {fileID: 0}
+  levelText: {fileID: 0}
