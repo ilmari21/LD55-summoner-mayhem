@@ -101,6 +101,7 @@ MonoBehaviour:
   spawnPrefab: {fileID: 3911695240520374139, guid: 896e029242c4844449c90774145600cb, type: 3}
   spawnList: []
   maxMinions: 5
+  spawnInterval: 2
   minionsFolder: {fileID: 0}
 --- !u!114 &1101950972646071089
 MonoBehaviour:
@@ -115,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultHealth: 1
+  civilianPrefab: {fileID: 592688946374957841, guid: 8e9b00f53081dac4a93d3de11e5f6083, type: 3}
 --- !u!61 &6556742675886061578
 BoxCollider2D:
   m_ObjectHideFlags: 0
