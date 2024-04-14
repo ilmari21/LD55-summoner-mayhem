@@ -12,7 +12,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] float defAtkSpeed;
     [SerializeField] float shootAtkSpeed;
     [SerializeField] GameObject projectilePrefab;
-    bool canAttack = true;
+    public bool canAttack = true;
     float attackTimer;
 
     void Start()
