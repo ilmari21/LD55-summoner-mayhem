@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  knockBack: 20
+  knockBack: 10
   invulnerable: 0
 --- !u!114 &752715233346622929
 MonoBehaviour:
@@ -312,8 +312,8 @@ MonoBehaviour:
   attackColl: {fileID: 5830559724715374651}
   usedWeapon: 0
   defAtkDmg: 5
-  defAtkSpeed: 1.5
-  shootAtkSpeed: 0.5
+  defAtkSpeed: 0.2
+  shootAtkSpeed: 0.3
   projectilePrefab: {fileID: 8649325589785130359, guid: 587a2c82793b32840801e26cf9e2ee8f, type: 3}
   canAttack: 1
 --- !u!114 &2092391256838806635
