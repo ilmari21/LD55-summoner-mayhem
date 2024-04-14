@@ -23,7 +23,7 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-    public Vector3 GetNearestCiv(Vector3 enemyPos) {
+    public GameObject GetNearestCiv(Vector3 enemyPos) {
         var tempList = new List<Vector3>();
         float shortestDist = 999f;
         var index = 0;
@@ -31,11 +31,11 @@ public class EnemyManager : MonoBehaviour
             tempList.Add(civilians[i].transform.position);
         }
         for (int i = 0; i < tempList.Count; i++) { 
-            if (Vector3.Distance(enemyPos, tempList[i]) < shortestDist) {
+            if (Vector3.Distance(enemyPos, tempList[i]) < shortestDist && civilians[i].GetComponent<CivilianScript>().enemiesComing.Count < 5) {
                 shortestDist = Vector3.Distance(enemyPos, tempList[i]);
                 index = i;
             }
         }
-        return tempList[index];
+        return civilians[index];
     }
 }

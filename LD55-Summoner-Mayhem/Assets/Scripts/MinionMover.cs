@@ -8,7 +8,7 @@ public class MinionMover : MonoBehaviour
     [SerializeField]
     float minionSpeed;
 
-    Vector3 target;
+    GameObject target;
 
     NavMeshAgent agent;
 
@@ -24,7 +24,9 @@ public class MinionMover : MonoBehaviour
 
         target = enemyManager.GetNearestCiv(transform.position);
 
-        agent.SetDestination(target);
+        target.GetComponent<CivilianScript>().enemiesComing.Add(gameObject);
+
+        agent.SetDestination(target.transform.position);
 
     }
 
