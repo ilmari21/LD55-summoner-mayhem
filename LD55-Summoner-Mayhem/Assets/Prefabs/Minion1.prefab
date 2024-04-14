@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 180272987252995825}
   - component: {fileID: 4701250236511382986}
   - component: {fileID: 8665663819906232183}
+  - component: {fileID: -3595670642254553983}
   m_Layer: 7
   m_Name: Minion1
   m_TagString: Untagged
@@ -69,8 +70,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minionSpeed: 1
-  target: {fileID: 0}
-  civilians: []
+--- !u!114 &-3595670642254553983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3911695240520374139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c0cb71c58a17b4da975aefc4b0f95d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1 &6374451585452125131
 GameObject:
   m_ObjectHideFlags: 0

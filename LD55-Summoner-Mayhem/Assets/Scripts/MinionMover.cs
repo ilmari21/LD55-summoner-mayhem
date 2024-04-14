@@ -28,6 +28,8 @@ public class MinionMover : MonoBehaviour
 
         agent.SetDestination(target.transform.position);
 
+        transform.SetParent(GameObject.Find("MinionFolder").transform);
+
     }
 
     void Update()
