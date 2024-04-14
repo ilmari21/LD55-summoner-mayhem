@@ -825,9 +825,17 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2656286991012570949, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
+      propertyPath: spawnPrefab
+      value: 
+      objectReference: {fileID: 3275601621936933893, guid: f99df824647ef2e4ab528ac03cd94483, type: 3}
+    - target: {fileID: 2656286991012570949, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
       propertyPath: spawnInterval
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4280981224223403766, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
+      propertyPath: spawnPrefab
+      value: 
+      objectReference: {fileID: 3275601621936933893, guid: f99df824647ef2e4ab528ac03cd94483, type: 3}
     - target: {fileID: 4280981224223403766, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
       propertyPath: spawnInterval
       value: 5
@@ -1267,11 +1275,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 752715233346622929, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: defAtkSpeed
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 752715233346622929, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: shootAtkSpeed
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619239171512306562, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: knockBack
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2092391256838806635, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: healthSlider
