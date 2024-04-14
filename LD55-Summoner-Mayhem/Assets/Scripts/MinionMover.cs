@@ -5,8 +5,6 @@ using UnityEngine.AI;
 
 public class MinionMover : MonoBehaviour
 {
-    [SerializeField]
-    float minionSpeed;
 
     GameObject target;
 

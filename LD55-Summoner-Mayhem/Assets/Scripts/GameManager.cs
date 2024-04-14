@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     public List<GameObject> summoners;
     [SerializeField] EnemyManager enemyManager;
     PlayerController playerCon;
+    [SerializeField] TMP_Text levelText;
 
 
     void Start() {
@@ -43,6 +45,7 @@ public class GameManager : MonoBehaviour
         }
         midLevel = true;
         midLevelUi.SetActive(true);
+        levelText.text = "Level " + levelIndex + " Complete";
         levels[levelIndex].SetActive(true);
         foreach (var enemy in enemyManager.enemies) {
             Destroy(enemy);
