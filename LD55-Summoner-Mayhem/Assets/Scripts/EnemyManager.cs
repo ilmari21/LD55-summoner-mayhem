@@ -31,8 +31,8 @@ public class EnemyManager : MonoBehaviour
             tempList.Add(civilians[i].transform.position);
         }
         for (int i = 0; i < tempList.Count; i++) { 
-            if (Vector3.Distance(enemyPos, tempList[i]) < shortestDist && civilians[i].GetComponent<CivilianScript>().enemiesComing.Count < 5) {
-                shortestDist = Vector3.Distance(enemyPos, tempList[i]);
+            if (Vector3.Distance(enemyPos, tempList[i]) + (civilians[i].GetComponent<CivilianScript>().enemiesComing.Count * 3) < shortestDist) {
+                shortestDist = Vector3.Distance(enemyPos, tempList[i]) + (civilians[i].GetComponent<CivilianScript>().enemiesComing.Count * 3);
                 index = i;
             }
         }
