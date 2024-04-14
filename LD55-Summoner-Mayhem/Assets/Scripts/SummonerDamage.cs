@@ -21,8 +21,7 @@ public class SummonerDamage : MonoBehaviour, IDamageable
     void Update() {
         if (health <= 0) {
             manager.summoners.Remove(gameObject);
-            var newCiv = Instantiate(civilianPrefab, gameObject.transform.position, Quaternion.identity);
-            enemyManager.civilians.Add(newCiv);
+            Instantiate(civilianPrefab, gameObject.transform.position, Quaternion.identity);
             Destroy(gameObject);
         }    
     }

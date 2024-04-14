@@ -1680,7 +1680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518133085598522442, guid: 8e9b00f53081dac4a93d3de11e5f6083, type: 3}
       propertyPath: staringHealth
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6941716233280099587, guid: 8e9b00f53081dac4a93d3de11e5f6083, type: 3}
       propertyPath: m_BodyType
@@ -4701,7 +4701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518133085598522442, guid: 8e9b00f53081dac4a93d3de11e5f6083, type: 3}
       propertyPath: staringHealth
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6941716233280099587, guid: 8e9b00f53081dac4a93d3de11e5f6083, type: 3}
       propertyPath: m_BodyType
