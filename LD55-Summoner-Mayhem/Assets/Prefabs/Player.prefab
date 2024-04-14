@@ -223,7 +223,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -294,7 +294,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f55adee395c941a478210054f785c88e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: 2
+  knockBack: 20
+  invulnerable: 0
 --- !u!114 &752715233346622929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,3 +329,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultHealth: 10
+  health: 0
+  invDuration: 2
+  healthSlider: {fileID: 0}
