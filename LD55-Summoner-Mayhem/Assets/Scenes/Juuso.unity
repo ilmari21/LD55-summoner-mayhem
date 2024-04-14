@@ -407,7 +407,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 6
-  m_NavMeshData: {fileID: 23800000, guid: 3b47669b94b14c24fbb2a15c76645431, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 1a6fed184d81e804886ef26818bb940b, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1 &619394800
 GameObject:
@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   staringHealth: 1
-  enemiesComing: 0
+  enemiesComing: []
 --- !u!61 &977339788
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1209,6 +1209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  knockBack: 0
+  invulnerable: 0
 --- !u!61 &1604377817
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1316,6 +1318,7 @@ MonoBehaviour:
   spawnPrefab: {fileID: 3911695240520374139, guid: 896e029242c4844449c90774145600cb, type: 3}
   spawnList: []
   maxMinions: 5
+  spawnInterval: 2
   minionsFolder: {fileID: 883717662}
 --- !u!65 &1703979422
 BoxCollider:
@@ -1501,7 +1504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   staringHealth: 1
-  enemiesComing: 0
+  enemiesComing: []
 --- !u!61 &1895021154
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1668,6 +1671,7 @@ MonoBehaviour:
   spawnPrefab: {fileID: 3911695240520374139, guid: 896e029242c4844449c90774145600cb, type: 3}
   spawnList: []
   maxMinions: 5
+  spawnInterval: 2
   minionsFolder: {fileID: 883717662}
 --- !u!1 &1990438020
 GameObject:
