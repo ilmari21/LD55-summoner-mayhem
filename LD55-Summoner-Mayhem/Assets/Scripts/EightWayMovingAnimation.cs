@@ -3,27 +3,25 @@ using System.Collections;
 using UnityEditor.AnimatedValues;
 
 public class EightWayMovingAnimation : MonoBehaviour {
-	//bool wasMoving;
 	int lastAnimSector;
 
 	public Animator animator;
 	Transform sprite;
-	//Vector3 lastPosition;
 
 	PlayerController playerController;
 	PlayerState lastPlayerState;
 
-    string[] idleAnimations =
+    public int publicSector;
+
+    public string[] idleAnimations =
         new string[] {"Paladin_Idle_North", "Paladin_Idle_NorthEast", "Paladin_Idle_East", "Paladin_Idle_SouthEast",
                         "Paladin_Idle_South", "Paladin_Idle_SouthWest", "Paladin_Idle_West", "Paladin_Idle_NorthWest"};
-    string[] movingAnimations =
+    public string[] movingAnimations =
         new string[] {"Paladin_Run_North", "Paladin_Run_NorthEast", "Paladin_Run_East", "Paladin_Run_SouthEast",
                         "Paladin_Run_South", "Paladin_Run_SouthWest", "Paladin_Run_West", "Paladin_Run_NorthWest"};
-    string[] meleeAnimations =
+    public string[] meleeAnimations =
         new string[] {"Paladin_Sword_North", "Paladin_Sword_NorthEast", "Paladin_Sword_East", "Paladin_Sword_SouthEast",
                         "Paladin_Sword_South", "Paladin_Sword_SouthWest", "Paladin_Sword_West", "Paladin_Sword_NorthWest"};
-    //string[] shootingAnimations =
-    //    new string[] { };
 
     void Awake () {
 		playerController = GetComponent<PlayerController>();
@@ -39,7 +37,7 @@ public class EightWayMovingAnimation : MonoBehaviour {
         float shortestAngle = Vector3.Angle (Vector3.up, d);
 		float clockwiseAngle = d.x >= 0 ? shortestAngle : 360 - shortestAngle;
 		int sector = ((int)(clockwiseAngle + 22.5f) % 360) / 45;
-        print(sector);
+        publicSector = sector;
 
 		if (state != lastPlayerState || sector != lastAnimSector)
 		{
@@ -55,27 +53,7 @@ public class EightWayMovingAnimation : MonoBehaviour {
             {
                 animator.Play(meleeAnimations[sector]);
             }
-            //else if (state == PlayerState.Shooting)
-            //{
-            //    animator.Play(shootingAnimations[sector]);
-            //}
         }
-
-        //bool nowMoving = Vector3.Distance (transform.position, lastPosition) > Mathf.Epsilon;
-
-        //int animSector = mapSectorToFlipped [sector];
-        //SetSpriteFlip (sector != animSector);
-
-        //if (lastAnimSector != animSector) { //vaihda inputtiin
-        //	animator.Play (animationNames [animSector * 2 + (nowMoving ? 1 : 0)]);
-        //} else if (wasMoving && !nowMoving) {
-        //	animator.Play (animationNames[animSector * 2]);
-        //} else if (!wasMoving && nowMoving) {
-        //	animator.Play (animationNames[animSector * 2 + 1]);
-        //}
-
-        //lastPosition = transform.position;
-        //wasMoving = nowMoving;
 
         lastPlayerState = state;
         lastAnimSector = sector;

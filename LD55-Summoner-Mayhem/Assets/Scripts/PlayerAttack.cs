@@ -14,9 +14,11 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     public bool canAttack = true;
     float attackTimer;
+    EightWayMovingAnimation animationMover;
 
     void Start()
     {
+        animationMover = GetComponent<EightWayMovingAnimation>();
         usedWeapon = weapon.melee;
         attackTimer = defAtkSpeed;
     }
@@ -43,6 +45,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && canAttack && usedWeapon == weapon.melee) {
             DefaultAttack(defAtkDmg, defAtkSpeed);
+            animationMover.animator.Play(animationMover.meleeAnimations[animationMover.publicSector]);
         } else if (Input.GetKey(KeyCode.Mouse0) && canAttack && usedWeapon == weapon.shooting) {
             ShootingAttack(shootAtkSpeed);
         }
