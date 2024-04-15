@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+public enum PlayerState
+{
+    Idle,
+    Moving,
+    Shooting,
+    Melee
+}
+
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
@@ -13,8 +21,11 @@ public class PlayerController : MonoBehaviour
     public bool invulnerable;
     public List<GameObject> enemiesComing = new List<GameObject>();
 
+    public PlayerState playerState;
+
     void Start()
     {
+        playerState = PlayerState.Idle;
         invulnerable = false;
         playerStartPos = transform.position;
         rb = GetComponent<Rigidbody2D>(); 
