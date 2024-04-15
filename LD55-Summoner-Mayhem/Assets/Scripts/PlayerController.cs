@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     Vector3 playerStartPos;
     PlayerHealth playerHp;
     public bool invulnerable;
+    public List<GameObject> enemiesComing = new List<GameObject>();
 
     void Start()
     {
