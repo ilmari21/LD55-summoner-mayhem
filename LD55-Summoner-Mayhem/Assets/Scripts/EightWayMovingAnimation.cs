@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor.AnimatedValues;
 
 public class EightWayMovingAnimation : MonoBehaviour {
 	int lastAnimSector;
@@ -56,5 +55,17 @@ public class EightWayMovingAnimation : MonoBehaviour {
 
         lastPlayerState = state;
         lastAnimSector = sector;
+    }
+    public void EndAnimation()
+    {
+        var state = playerController.playerState;
+        if (state == PlayerState.Idle)
+        {
+            animator.Play(idleAnimations[publicSector]);
+        }
+        else if (state == PlayerState.Moving)
+        {
+            animator.Play(movingAnimations[publicSector]);
+        }
     }
 }
