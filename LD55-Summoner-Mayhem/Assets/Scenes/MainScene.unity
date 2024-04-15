@@ -576,10 +576,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 305380133}
     - target: {fileID: 2097431668592343003, guid: c83fe9b27ac3e8841818d7a21059c761, type: 3}
-      propertyPath: levels.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2097431668592343003, guid: c83fe9b27ac3e8841818d7a21059c761, type: 3}
       propertyPath: levels.Array.data[0]
       value: 
       objectReference: {fileID: 158937626}
@@ -1349,6 +1345,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4160679343941376036, guid: 95711766f44fd2b488e92e24c9df4e75, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -787817511, guid: 4cd193b6a306b5444a74a36c3dec0e3f, type: 3}
     - target: {fileID: 4160679343941376036, guid: 95711766f44fd2b488e92e24c9df4e75, type: 3}
       propertyPath: m_Color.b
       value: 1
