@@ -22,7 +22,12 @@ public class GameManager : MonoBehaviour
     }
 
     void Update() {
-        if (summoners.Count == 0 && midLevel == false) {
+        if (summoners.Count == 0 && midLevel == false)
+        {
+            foreach (var civ in enemyManager.civilians)
+            {
+                Destroy(civ);
+            }
             LoadNextLevel();
         }    
         if (midLevel == true && Input.GetKeyDown(KeyCode.Space)) {
