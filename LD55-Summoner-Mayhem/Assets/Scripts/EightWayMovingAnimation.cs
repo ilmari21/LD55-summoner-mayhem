@@ -13,15 +13,15 @@ public class EightWayMovingAnimation : MonoBehaviour {
 	PlayerController playerController;
 	PlayerState lastPlayerState;
 
-    public string[] idleAnimations =
-        new string[] {"Paladin_Gun_Idle_North", "Paladin_Gun_Idle_NorthEast", "Paladin_Gun_Idle_East", "Paladin_Gun_Idle_SouthEast",
-                        "Paladin_Gun_Idle_South", "Paladin_Gun_Idle_SouthWest", "Paladin_Gun_Idle_West", "Paladin_Gun_Idle_NorthWest"};
-    public string[] movingAnimations =
-        new string[] {"Paladin_Gun_Run_North", "Paladin_Gun_Run_NorthEast", "Paladin_Gun_Run_East", "Paladin_Gun_Run_SouthEast",
-                        "Paladin_Gun_Run_South", "Paladin_Gun_Run_SouthWest", "Paladin_Gun_Run_West", "Paladin_Gun_Run_NorthWest"};
-    public string[] shootingAnimations =
+    string[] idleAnimations =
+        new string[] {"Paladin_Idle_North", "Paladin_Idle_NorthEast", "Paladin_Idle_East", "Paladin_Idle_SouthEast",
+                        "Paladin_Idle_South", "Paladin_Idle_SouthWest", "Paladin_Idle_West", "Paladin_Idle_NorthWest"};
+    string[] movingAnimations =
+        new string[] {"Paladin_Run_North", "Paladin_Run_NorthEast", "Paladin_Run_East", "Paladin_Run_SouthEast",
+                        "Paladin_Run_South", "Paladin_Run_SouthWest", "Paladin_Run_West", "Paladin_Run_NorthWest"};
+    string[] shootingAnimations =
         new string[] { }; 
-    public string[] meleeAnimations =
+    string[] meleeAnimations =
         new string[] { };
 
     void Awake () {
@@ -38,6 +38,7 @@ public class EightWayMovingAnimation : MonoBehaviour {
         float shortestAngle = Vector3.Angle (Vector3.up, d);
 		float clockwiseAngle = d.x >= 0 ? shortestAngle : 360 - shortestAngle;
 		int sector = ((int)(clockwiseAngle + 22.5f) % 360) / 45;
+        print(sector);
 
 		if (state != lastPlayerState || sector != lastAnimSector)
 		{
