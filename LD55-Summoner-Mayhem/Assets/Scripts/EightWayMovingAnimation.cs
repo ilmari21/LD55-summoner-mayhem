@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor.AnimatedValues;
+//using UnityEditor.AnimatedValues;
 
 public class EightWayMovingAnimation : MonoBehaviour {
 	int lastAnimSector;

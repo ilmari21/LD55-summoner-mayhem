@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class SceneLoaderScript : MonoBehaviour
 {
-    public Canvas uiCanvas;
 
     [SerializeField] GameObject audioFw;
 
@@ -31,7 +30,6 @@ public class SceneLoaderScript : MonoBehaviour
         gameOver.SetActive(false);
 
         DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(uiCanvas);
         DontDestroyOnLoad(audioFw);
         //startGame.gameObject.SetActive(true);
         //pauseGame.gameObject.SetActive(false);
