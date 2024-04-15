@@ -14268,10 +14268,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Summoner 3
       objectReference: {fileID: 0}
-    - target: {fileID: 5757061914302959483, guid: df2017e1e528e09419cad27553c5ce04, type: 3}
-      propertyPath: spawnInterval
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8727846664232741944, guid: df2017e1e528e09419cad27553c5ce04, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.88
@@ -19436,10 +19432,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Summoner 4
       objectReference: {fileID: 0}
-    - target: {fileID: 5757061914302959483, guid: df2017e1e528e09419cad27553c5ce04, type: 3}
-      propertyPath: spawnInterval
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 8727846664232741944, guid: df2017e1e528e09419cad27553c5ce04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13
@@ -20131,14 +20123,6 @@ PrefabInstance:
     - target: {fileID: 4710933381282622194, guid: df2017e1e528e09419cad27553c5ce04, type: 3}
       propertyPath: m_Name
       value: Summoner 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757061914302959483, guid: df2017e1e528e09419cad27553c5ce04, type: 3}
-      propertyPath: spawnPrefab
-      value: 
-      objectReference: {fileID: 3911695240520374139, guid: 896e029242c4844449c90774145600cb, type: 3}
-    - target: {fileID: 5757061914302959483, guid: df2017e1e528e09419cad27553c5ce04, type: 3}
-      propertyPath: spawnInterval
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8727846664232741944, guid: df2017e1e528e09419cad27553c5ce04, type: 3}
       propertyPath: m_LocalPosition.x

@@ -8,36 +8,47 @@ public class SceneLoaderScript : MonoBehaviour
 {
     public Canvas uiCanvas;
 
-    public Button startGame, pauseGame, resumeGame, backToMenu;
+    //public Button startGame, pauseGame, resumeGame, backToMenu;
 
-    public Image backGround;
+    //public Image backGround;
 
-    public GameObject gameOverText;
+    //public GameObject gameOverText;
+
+    [SerializeField] GameObject mainMenu;
+
+    [SerializeField] GameObject pauseMenu;
+
+    [SerializeField] GameObject gameOver;
 
     void Awake()
     {
+        mainMenu.SetActive(true);
+        gameOver.SetActive(false);
+
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(uiCanvas);
-        startGame.gameObject.SetActive(true);
-        pauseGame.gameObject.SetActive(false);
-        resumeGame.gameObject.SetActive(false);
-        backToMenu.gameObject.SetActive(false);
-        gameOverText.gameObject.SetActive(false);
+        //startGame.gameObject.SetActive(true);
+        //pauseGame.gameObject.SetActive(false);
+        //resumeGame.gameObject.SetActive(false);
+        //backToMenu.gameObject.SetActive(false);
+        //gameOverText.gameObject.SetActive(false);
     }
 
     public void StartGame()
     {
-        startGame.gameObject.SetActive(false);
-        backGround.gameObject.SetActive(false);
+        mainMenu.SetActive(false);
+        //startGame.gameObject.SetActive(false);
+        //backGround.gameObject.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainScene");
     }
 
     public void GameOver()
     {
-        backToMenu.gameObject.SetActive(true);
-        backGround.gameObject.SetActive(true);
-        gameOverText.gameObject.SetActive(true);
+        gameOver.SetActive(true);
+        //backToMenu.gameObject.SetActive(true);
+        //backGround.gameObject.SetActive(true);
+        //gameOverText.gameObject.SetActive(true);
         Time.timeScale = 0f;
         SceneManager.LoadScene("GameOver");
     }
@@ -46,29 +57,39 @@ public class SceneLoaderScript : MonoBehaviour
     {
         AudioFW.StopLoop("Music");
         Time.timeScale = 0f;
-        pauseGame.gameObject.SetActive(false);
-        resumeGame.gameObject.SetActive(true);
-        backToMenu.gameObject.SetActive(true);
+        pauseMenu.SetActive(true);
+        //pauseGame.gameObject.SetActive(false);
+        //resumeGame.gameObject.SetActive(true);
+        //backToMenu.gameObject.SetActive(true);
     }
     public void ResumeGame()
     {
         AudioFW.PlayLoop("Music");
-        backToMenu.gameObject.SetActive(false);
-        resumeGame.gameObject.SetActive(false);
+        pauseMenu.SetActive(false);
+        //backToMenu.gameObject.SetActive(false);
+        //resumeGame.gameObject.SetActive(false);
         Time.timeScale = 1f;
     }
 
     public void BackToMenu()
     {
-        pauseGame.gameObject.SetActive(false);
-        resumeGame.gameObject.SetActive(false);
-        backToMenu.gameObject.SetActive(false);
-        startGame.gameObject.SetActive(true);
-        backGround.gameObject.SetActive(true);
-        gameOverText.gameObject.SetActive(false);
+        pauseMenu.SetActive(false);
+        mainMenu.SetActive(true);
+        gameOver.SetActive(false);
+
+        //pauseGame.gameObject.SetActive(false);
+        //resumeGame.gameObject.SetActive(false);
+        //backToMenu.gameObject.SetActive(false);
+        //startGame.gameObject.SetActive(true);
+        //backGround.gameObject.SetActive(true);
+        //gameOverText.gameObject.SetActive(false);
         Destroy(gameObject);
         Time.timeScale = 0f;
         SceneManager.LoadScene("MainMenu");
+    }
+    public void QuitGame() {
+        Application.Quit();
+        Debug.Log("Quitting Game...");
     }
 
     void Update()
