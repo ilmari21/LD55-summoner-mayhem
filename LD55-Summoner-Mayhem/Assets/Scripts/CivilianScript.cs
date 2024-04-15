@@ -13,7 +13,7 @@ public class CivilianScript : MonoBehaviour, IDamageable
     void Awake () 
     { 
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        Invoke("SetColliderOn", 2f);
+        Invoke("SetColliderOn", 5f);
     }
 
     void SetColliderOn()
