@@ -10,6 +10,17 @@ public class CivilianScript : MonoBehaviour, IDamageable
     EnemyManager enemyManager;
     GameManager gameManager;
 
+    void Awake () 
+    { 
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        Invoke("SetColliderOn", 2f);
+    }
+
+    void SetColliderOn()
+    {
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
+    }
+
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
