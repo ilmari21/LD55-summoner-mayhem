@@ -136,6 +136,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 978304482669301173, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308223065407439878, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 5566420083747838596, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5566420083747838596, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.55
+      objectReference: {fileID: 0}
     - target: {fileID: 6677431396369728280, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
       propertyPath: m_Name
       value: Level1
@@ -180,7 +196,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7741638825310023593, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
+    - {fileID: 4234846328534724338, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -573,54 +591,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7177778058876534034, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
-      propertyPath: m_AngularDrag
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3589345284069922690, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 871360706}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
---- !u!1 &871360705 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3589345284069922690, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
-  m_PrefabInstance: {fileID: 871360704}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &871360706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871360705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93fdabfc1bc7dfb42aa1bb804e611b14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkingAnimations:
-  - Paladin_Gun_Run_North
-  - Paladin_Gun_Run_NorthEast
-  - Paladin_Gun_Run_East
-  - Paladin_Gun_Run_SouthEast
-  - Paladin_Gun_Run_South
-  - Paladin_Gun_Run_SouthWest
-  - Paladin_Gun_Run_West
-  - Paladin_Gun_Run_NorthWest
-  idleAnimations:
-  - Paladin_Gun_Idle_North
-  - Paladin_Gun_Idle_NorthEast
-  - Paladin_Gun_Idle_East
-  - Paladin_Gun_Idle_SouthEast
-  - Paladin_Gun_Idle_South
-  - Paladin_Gun_Idle_SouthWest
-  - Paladin_Gun_Idle_West
-  - Paladin_Gun_Idle_NorthWest
-  attackAnimations: []
 --- !u!1001 &887451155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -724,8 +699,92 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8900705283399236402, guid: a1776e741b156474b963d680389e832a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1031579630}
+    - targetCorrespondingSourceObject: {fileID: 8900705283399236402, guid: a1776e741b156474b963d680389e832a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1031579629}
   m_SourcePrefab: {fileID: 100100000, guid: a1776e741b156474b963d680389e832a, type: 3}
+--- !u!1 &1031579624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8900705283399236402, guid: a1776e741b156474b963d680389e832a, type: 3}
+  m_PrefabInstance: {fileID: 887451155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1031579629
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031579624}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4cd193b6a306b5444a74a36c3dec0e3f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.2, y: 1.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &1031579630
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031579624}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 62ea6a9adf8e67d46acf5fb4ef6dd063, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1052071929
 GameObject:
   m_ObjectHideFlags: 0
