@@ -3,12 +3,12 @@ using System.Collections;
 using UnityEditor.AnimatedValues;
 
 public class EightWayMovingAnimation : MonoBehaviour {
-	bool wasMoving;
+	//bool wasMoving;
 	int lastAnimSector;
 
-	Animator animator;
+	public Animator animator;
 	Transform sprite;
-	Vector3 lastPosition;
+	//Vector3 lastPosition;
 
 	PlayerController playerController;
 	PlayerState lastPlayerState;
@@ -19,10 +19,11 @@ public class EightWayMovingAnimation : MonoBehaviour {
     string[] movingAnimations =
         new string[] {"Paladin_Run_North", "Paladin_Run_NorthEast", "Paladin_Run_East", "Paladin_Run_SouthEast",
                         "Paladin_Run_South", "Paladin_Run_SouthWest", "Paladin_Run_West", "Paladin_Run_NorthWest"};
-    string[] shootingAnimations =
-        new string[] { }; 
     string[] meleeAnimations =
-        new string[] { };
+        new string[] {"Paladin_Sword_North", "Paladin_Sword_NorthEast", "Paladin_Sword_East", "Paladin_Sword_SouthEast",
+                        "Paladin_Sword_South", "Paladin_Sword_SouthWest", "Paladin_Sword_West", "Paladin_Sword_NorthWest"};
+    //string[] shootingAnimations =
+    //    new string[] { };
 
     void Awake () {
 		playerController = GetComponent<PlayerController>();
@@ -50,14 +51,14 @@ public class EightWayMovingAnimation : MonoBehaviour {
 			{
                 animator.Play(movingAnimations[sector]);
             }
-            else if (state == PlayerState.Shooting)
-            {
-                animator.Play(shootingAnimations[sector]);
-            }
             else if (state == PlayerState.Melee)
             {
                 animator.Play(meleeAnimations[sector]);
             }
+            //else if (state == PlayerState.Shooting)
+            //{
+            //    animator.Play(shootingAnimations[sector]);
+            //}
         }
 
         //bool nowMoving = Vector3.Distance (transform.position, lastPosition) > Mathf.Epsilon;
