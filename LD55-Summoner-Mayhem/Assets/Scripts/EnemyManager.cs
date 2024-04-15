@@ -17,14 +17,20 @@ public class EnemyManager : MonoBehaviour
 
     public void UpdateCivilians() {
         civilians.Clear();
-        var civs = FindObjectsOfType<CivilianScript>();
+        var civs = new List<GameObject>();
+        var civs2 = FindObjectsOfType<CivilianScript>();
+        foreach (var civ in civs2)
+        {
+            civs.Add(civ.gameObject);
+        }
         if (civs == null) {
             Debug.Log("no civilians");
             Debug.Break();
         }
-        for (int i = 0; i < civilians.Count; i++) {
-            civilians.Add(civs[i].gameObject);
+        for (int i = 0; i < civs.Count; i++) {
+            civilians.Add(civs[i]);
         }
+        print("civilians updated");
     }
 
     public GameObject GetNearestCiv(Vector3 enemyPos) {
