@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4c372c31327e3ab44b89b14e5449855e
+guid: d875021426e8e8249a3b9a21af462e82
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Innocent1_0
+      name: Fallen_Knight_North_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 64
-        width: 24
-        height: 36
+        x: 0
+        y: 60
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e1addb1495ded74a871e8c56122300d
-      internalID: 690566138
+      spriteID: 5868ea12c825ede47b8f34d9e8992737
+      internalID: -736003768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Innocent1_1
+      name: Fallen_Knight_North_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 63
-        width: 24
-        height: 35
+        x: 60
+        y: 60
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e55c6f95a3530354b963eb1fb4acd8a3
-      internalID: 1540889504
+      spriteID: 5ab44f75f5140bd4a821e11992a49c2b
+      internalID: 1247758613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Innocent1_2
+      name: Fallen_Knight_North_2
       rect:
         serializedVersion: 2
-        x: 20
-        y: 3
-        width: 25
-        height: 34
+        x: 0
+        y: 0
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e2e1cead8366034f94d41beb273f80f
-      internalID: 298984749
+      spriteID: 7af280397d8276f46b5d341c7f4141ad
+      internalID: -2034205963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Innocent1_3
+      name: Fallen_Knight_North_3
       rect:
         serializedVersion: 2
-        x: 80
-        y: 3
-        width: 24
-        height: 35
+        x: 60
+        y: 0
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c2b66c61bddfdd49a4debd8a567e262
-      internalID: 1961662243
+      spriteID: 62daefd27784f0a4ba8a80dc52472486
+      internalID: 1900937523
       vertices: []
       indices: 
       edges: []
@@ -191,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Innocent1_0: 690566138
-      Innocent1_1: 1540889504
-      Innocent1_2: 298984749
-      Innocent1_3: 1961662243
+      Fallen_Knight_North_0: -736003768
+      Fallen_Knight_North_1: 1247758613
+      Fallen_Knight_North_2: -2034205963
+      Fallen_Knight_North_3: 1900937523
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

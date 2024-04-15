@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4c372c31327e3ab44b89b14e5449855e
+guid: 06e52c276934bb4499ef85ed78fe342d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Innocent1_0
+      name: Summoner2_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 64
-        width: 24
-        height: 36
+        x: 0
+        y: 60
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e1addb1495ded74a871e8c56122300d
-      internalID: 690566138
+      spriteID: 11b2d700fede0bf439b06c08dac169b5
+      internalID: -560207640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Innocent1_1
+      name: Summoner2_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 63
-        width: 24
-        height: 35
+        x: 60
+        y: 60
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e55c6f95a3530354b963eb1fb4acd8a3
-      internalID: 1540889504
+      spriteID: 10844a38f21836a41a2df8bd5d1931e9
+      internalID: -1647928182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Innocent1_2
+      name: Summoner2_2
       rect:
         serializedVersion: 2
-        x: 20
-        y: 3
-        width: 25
-        height: 34
+        x: 0
+        y: 0
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e2e1cead8366034f94d41beb273f80f
-      internalID: 298984749
+      spriteID: b97c3b7ca77bc2944a160762fd69ec79
+      internalID: 418157406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Innocent1_3
+      name: Summoner2_3
       rect:
         serializedVersion: 2
-        x: 80
-        y: 3
-        width: 24
-        height: 35
+        x: 60
+        y: 0
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c2b66c61bddfdd49a4debd8a567e262
-      internalID: 1961662243
+      spriteID: ae28c0dec32611f479b47f74d1d8b2d3
+      internalID: -2020958208
       vertices: []
       indices: 
       edges: []
@@ -191,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Innocent1_0: 690566138
-      Innocent1_1: 1540889504
-      Innocent1_2: 298984749
-      Innocent1_3: 1961662243
+      Summoner2_0: -560207640
+      Summoner2_1: -1647928182
+      Summoner2_2: 418157406
+      Summoner2_3: -2020958208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

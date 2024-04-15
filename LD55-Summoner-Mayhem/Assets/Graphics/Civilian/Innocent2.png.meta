@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4c372c31327e3ab44b89b14e5449855e
+guid: 01b52e3ca69e79a41b88ba3dc9011f03
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Innocent1_0
+      name: Innocent2_0
       rect:
         serializedVersion: 2
         x: 20
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e1addb1495ded74a871e8c56122300d
-      internalID: 690566138
+      spriteID: cc7e2a9c674d99249b607a61e270a8f1
+      internalID: -1754619535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Innocent1_1
+      name: Innocent2_1
       rect:
         serializedVersion: 2
         x: 80
@@ -132,17 +132,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e55c6f95a3530354b963eb1fb4acd8a3
-      internalID: 1540889504
+      spriteID: a3b552481d801b64f8550231c2d9e701
+      internalID: -758624252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Innocent1_2
+      name: Innocent2_2
       rect:
         serializedVersion: 2
-        x: 20
+        x: 19
         y: 3
         width: 25
         height: 34
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e2e1cead8366034f94d41beb273f80f
-      internalID: 298984749
+      spriteID: a5a5c67479b39194cbee0bdf75b4e8d5
+      internalID: 1949035406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Innocent1_3
+      name: Innocent2_3
       rect:
         serializedVersion: 2
         x: 80
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c2b66c61bddfdd49a4debd8a567e262
-      internalID: 1961662243
+      spriteID: cab4df4363bb50b47b1a480636a09a5e
+      internalID: -776871982
       vertices: []
       indices: 
       edges: []
@@ -191,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Innocent1_0: 690566138
-      Innocent1_1: 1540889504
-      Innocent1_2: 298984749
-      Innocent1_3: 1961662243
+      Innocent2_0: -1754619535
+      Innocent2_1: -758624252
+      Innocent2_2: 1949035406
+      Innocent2_3: -776871982
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
