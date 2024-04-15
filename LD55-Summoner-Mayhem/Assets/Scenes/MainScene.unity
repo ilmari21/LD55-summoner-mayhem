@@ -138,7 +138,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4288936561021152642, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
       propertyPath: staringHealth
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6677431396369728280, guid: 8d2643dc6ab4b8b4ba952f603cec0e9e, type: 3}
       propertyPath: m_Name

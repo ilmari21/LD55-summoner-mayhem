@@ -12,6 +12,8 @@ public class SceneLoaderScript : MonoBehaviour
 
     public Image backGround;
 
+    public GameObject gameOverText;
+
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -20,6 +22,7 @@ public class SceneLoaderScript : MonoBehaviour
         pauseGame.gameObject.SetActive(false);
         resumeGame.gameObject.SetActive(false);
         backToMenu.gameObject.SetActive(false);
+        gameOverText.gameObject.SetActive(false);
     }
 
     public void StartGame()
@@ -33,6 +36,8 @@ public class SceneLoaderScript : MonoBehaviour
     public void GameOver()
     {
         backToMenu.gameObject.SetActive(true);
+        backGround.gameObject.SetActive(true);
+        gameOverText.gameObject.SetActive(true);
         Time.timeScale = 0f;
         SceneManager.LoadScene("GameOver");
     }
@@ -43,11 +48,13 @@ public class SceneLoaderScript : MonoBehaviour
         pauseGame.gameObject.SetActive(false);
         resumeGame.gameObject.SetActive(true);
         backToMenu.gameObject.SetActive(true);
+        backGround.gameObject.SetActive(true);
     }
     public void ResumeGame()
     {
         backToMenu.gameObject.SetActive(false);
         resumeGame.gameObject.SetActive(false);
+        backGround.gameObject.SetActive(false);
         Time.timeScale = 1f;
     }
 
@@ -58,6 +65,7 @@ public class SceneLoaderScript : MonoBehaviour
         backToMenu.gameObject.SetActive(false);
         startGame.gameObject.SetActive(true);
         backGround.gameObject.SetActive(true);
+        gameOverText.gameObject.SetActive(false);
         Destroy(gameObject);
         Time.timeScale = 0f;
         SceneManager.LoadScene("MainMenu");
