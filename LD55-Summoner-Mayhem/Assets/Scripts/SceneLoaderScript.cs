@@ -48,13 +48,11 @@ public class SceneLoaderScript : MonoBehaviour
         pauseGame.gameObject.SetActive(false);
         resumeGame.gameObject.SetActive(true);
         backToMenu.gameObject.SetActive(true);
-        backGround.gameObject.SetActive(true);
     }
     public void ResumeGame()
     {
         backToMenu.gameObject.SetActive(false);
         resumeGame.gameObject.SetActive(false);
-        backGround.gameObject.SetActive(false);
         Time.timeScale = 1f;
     }
 
