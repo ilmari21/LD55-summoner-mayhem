@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void GameOver() {
-        //Game Over Stuff
+        AudioFW.PlayLoop("Gunfire");
         Debug.Log("Game Over");
         sceneLoader.GameOver();
     }
