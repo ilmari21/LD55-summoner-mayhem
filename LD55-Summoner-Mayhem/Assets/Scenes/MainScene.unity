@@ -722,12 +722,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1619239171512306562, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: moveSpeed
-      value: 0.6
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2092391256838806635, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1846240772}
+    - target: {fileID: 2092391256838806635, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: defaultHealth
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 3589345284069922690, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: m_Name
       value: Player
@@ -738,11 +742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5830559724715374651, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: m_Size.y
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5830559724715374651, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: m_Offset.y
-      value: 1
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -785,6 +789,14 @@ PrefabInstance:
     - target: {fileID: 2394495877399533781, guid: a1776e741b156474b963d680389e832a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3344750475184459717, guid: a1776e741b156474b963d680389e832a, type: 3}
+      propertyPath: m_Value
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3344750475184459717, guid: a1776e741b156474b963d680389e832a, type: 3}
+      propertyPath: m_MaxValue
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6774464429796520656, guid: a1776e741b156474b963d680389e832a, type: 3}
       propertyPath: m_Pivot.x
