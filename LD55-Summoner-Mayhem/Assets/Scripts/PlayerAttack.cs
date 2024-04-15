@@ -45,7 +45,7 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0) && canAttack && usedWeapon == weapon.melee) {
             DefaultAttack(defAtkDmg, defAtkSpeed);
             animationMover.animator.Play(animationMover.meleeAnimations[animationMover.publicSector]);
-            animationMover.Invoke("EndAnimation", 0.3f);
+            animationMover.Invoke("EndAnimation", 0.24f);
         } else if (Input.GetKey(KeyCode.Mouse0) && canAttack && usedWeapon == weapon.shooting) {
             ShootingAttack(shootAtkSpeed);
         }
