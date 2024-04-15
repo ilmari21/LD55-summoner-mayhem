@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +95,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Paladin_Gun_Run_NorthEast_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 63
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61245a60d50c38409e0902b3d34ae36
+      internalID: 1361990600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_Gun_Run_NorthEast_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 63
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a79cad30dae5df45973dfe6a68e1f10
+      internalID: -35400808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_Gun_Run_NorthEast_2
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6df2d36583257d43981e4ce74eb4c1a
+      internalID: 1838144900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_Gun_Run_NorthEast_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a226c2e626e1c44b4b912663394609
+      internalID: 1494264241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +190,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Paladin_Gun_Run_NorthEast_0: 1361990600
+      Paladin_Gun_Run_NorthEast_1: -35400808
+      Paladin_Gun_Run_NorthEast_2: 1838144900
+      Paladin_Gun_Run_NorthEast_3: 1494264241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

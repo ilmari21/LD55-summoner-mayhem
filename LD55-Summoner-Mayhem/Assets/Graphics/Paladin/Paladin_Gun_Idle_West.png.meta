@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 12cffd3fb7acdb44fbf067b7713367ee
+guid: a82c0ae0c11c63a49b2ad028a8cdab6a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Paladin_Gun_Run_SouthWest_0
+      name: Paladin_Gun_Idle_West_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 4
         y: 61
-        width: 45
-        height: 57
+        width: 48
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87a33f184760d48478add9b30865ee49
-      internalID: 1081354943
+      spriteID: 4211157df4668694e8fac0eebc62526d
+      internalID: -886672426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_Gun_Run_SouthWest_1
+      name: Paladin_Gun_Idle_West_1
       rect:
         serializedVersion: 2
-        x: 70
-        y: 60
-        width: 45
-        height: 57
+        x: 64
+        y: 61
+        width: 48
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8133bbed021201f4ab86957d2db39eff
-      internalID: 1487993928
+      spriteID: d7cfc4fe6459b1744845b913ea2803de
+      internalID: 934205189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_Gun_Run_SouthWest_2
+      name: Paladin_Gun_Idle_West_2
       rect:
         serializedVersion: 2
-        x: 10
+        x: 4
         y: 1
-        width: 45
-        height: 57
+        width: 48
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f1716123fd4481428011a782843a524
-      internalID: 1882157475
+      spriteID: a0097e9239d7649439338b233dedc0aa
+      internalID: 416523429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paladin_Gun_Run_SouthWest_3
+      name: Paladin_Gun_Idle_West_3
       rect:
         serializedVersion: 2
-        x: 70
-        y: 0
-        width: 45
-        height: 57
+        x: 64
+        y: 1
+        width: 48
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05770e5cf46e1224497cd73bd925709c
-      internalID: 554704134
+      spriteID: fcece5ef907230c4a91337c6881cddd8
+      internalID: -1791198544
       vertices: []
       indices: 
       edges: []
@@ -191,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Paladin_Gun_Run_SouthWest_0: 1081354943
-      Paladin_Gun_Run_SouthWest_1: 1487993928
-      Paladin_Gun_Run_SouthWest_2: 1882157475
-      Paladin_Gun_Run_SouthWest_3: 554704134
+      Paladin_Gun_Idle_West_0: -886672426
+      Paladin_Gun_Idle_West_1: 934205189
+      Paladin_Gun_Idle_West_2: 416523429
+      Paladin_Gun_Idle_West_3: -1791198544
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +95,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Paladin_Gun_Idle_SouthWest_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 61
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f36b021fe637e40b4b3533a5467530
+      internalID: -1206402376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_Gun_Idle_SouthWest_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 60
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a6b372fbb29924eb3d0ebf5e482d8a
+      internalID: -363910073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_Gun_Idle_SouthWest_2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b93904432c00cc409bd326aede55006
+      internalID: -10664949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paladin_Gun_Idle_SouthWest_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd745b1e3c3d0f4caf2133f83a5f651
+      internalID: -1948443516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +190,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Paladin_Gun_Idle_SouthWest_0: -1206402376
+      Paladin_Gun_Idle_SouthWest_1: -363910073
+      Paladin_Gun_Idle_SouthWest_2: -10664949
+      Paladin_Gun_Idle_SouthWest_3: -1948443516
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
