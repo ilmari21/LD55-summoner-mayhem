@@ -11,11 +11,9 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] int defAtkDmg;
     [SerializeField] float defAtkSpeed;
     [SerializeField] float shootAtkSpeed;
-    [SerializeField] int shootAtkDmg;
     [SerializeField] GameObject projectilePrefab;
     public bool canAttack = true;
     float attackTimer;
-    LayerMask layerMask = 3;
 
     void Start()
     {
@@ -45,7 +43,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && canAttack && usedWeapon == weapon.melee) {
             DefaultAttack(defAtkDmg, defAtkSpeed);
-        } else if (Input.GetKey(KeyCode.Mouse0)) {
+        } else if (Input.GetKey(KeyCode.Mouse0) && canAttack && usedWeapon == weapon.shooting) {
             ShootingAttack(shootAtkSpeed);
         }
 
@@ -68,23 +66,13 @@ public class PlayerAttack : MonoBehaviour
     }
 
     void ShootingAttack(float speed) {
-        //Instantiate(projectilePrefab, transform.position, transform.rotation);
-        //attackTimer = speed;
-        var hit = Physics2D.Raycast(transform.position, transform.up, 100, layerMask);
-        if (hit.collider == null) {
-            Debug.Log("Raycast hitting nothing");
-            return;
-        }
-        print(hit.collider.gameObject);
-        Debug.DrawRay(transform.position, transform.up * Vector3.Distance(transform.position, hit.collider.transform.position), Color.red, 1.0f);
-        if (hit.collider.gameObject.layer == 7 && canAttack) {
-            print("Shoot");
-            print(hit.collider.gameObject);
-            var enemyDamage = hit.collider.GetComponent<IDamageable>();
-            enemyDamage.Damage(shootAtkDmg);
-            attackTimer = speed;
-            canAttack = false;
-        }
+        var scatterOffset = Random.Range(-10f, 10f);
+        print(scatterOffset);
+        var projectileRot = transform.rotation;
+        projectileRot *= Quaternion.Euler(0f, 0f, scatterOffset);
+        Instantiate(projectilePrefab, transform.position, projectileRot);
+        attackTimer = speed;
+        canAttack = false;
     }
 
 
