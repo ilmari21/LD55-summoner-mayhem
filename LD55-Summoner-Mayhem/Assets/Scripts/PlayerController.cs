@@ -39,6 +39,14 @@ public class PlayerController : MonoBehaviour
         var move = new Vector2 (xInput, yInput);
         //rb.velocity = move * moveSpeed;
         rb.AddForce (move.normalized * moveSpeed,ForceMode2D.Impulse);
+        if (rb.velocity != Vector2.zero)
+        {
+            playerState = PlayerState.Moving;
+        }
+        else if (rb.velocity == Vector2.zero)
+        {
+            playerState = PlayerState.Idle;
+        }
     }
 
     void Update() {

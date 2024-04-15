@@ -13,7 +13,6 @@ public class EightWayMovingAnimation : MonoBehaviour {
 	PlayerController playerController;
 	PlayerState lastPlayerState;
 
-	//int[] mapSectorToFlipped = new int[] {0, 1, 2, 3, 4, 3, 2, 1};
     public string[] idleAnimations =
         new string[] {"Paladin_Gun_Idle_North", "Paladin_Gun_Idle_NorthEast", "Paladin_Gun_Idle_East", "Paladin_Gun_Idle_SouthEast",
                         "Paladin_Gun_Idle_South", "Paladin_Gun_Idle_SouthWest", "Paladin_Gun_Idle_West", "Paladin_Gun_Idle_NorthWest"};
@@ -24,12 +23,6 @@ public class EightWayMovingAnimation : MonoBehaviour {
         new string[] { }; 
     public string[] meleeAnimations =
         new string[] { };
-
-    //void SetSpriteFlip(bool flipped) {
-    //	var scale = sprite.localScale;
-    //	scale.x = (flipped ? -1 : 1) * Mathf.Abs(scale.x);
-    //	sprite.localScale = scale;
-    //}
 
     void Awake () {
 		playerController = GetComponent<PlayerController>();
@@ -45,7 +38,6 @@ public class EightWayMovingAnimation : MonoBehaviour {
         float shortestAngle = Vector3.Angle (Vector3.up, d);
 		float clockwiseAngle = d.x >= 0 ? shortestAngle : 360 - shortestAngle;
 		int sector = ((int)(clockwiseAngle + 22.5f) % 360) / 45;
-		//print(sector);
 
 		if (state != lastPlayerState || sector != lastAnimSector)
 		{
