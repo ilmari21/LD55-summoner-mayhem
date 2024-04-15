@@ -8,7 +8,7 @@ public class EightWayMovingAnimation : MonoBehaviour {
 	public Animator animator;
 	Transform sprite;
 
-	PlayerController playerController;
+	public PlayerController playerController;
 	PlayerState lastPlayerState;
 
     public int publicSector;
@@ -24,7 +24,6 @@ public class EightWayMovingAnimation : MonoBehaviour {
                         "Paladin_Sword_South", "Paladin_Sword_SouthWest", "Paladin_Sword_West", "Paladin_Sword_NorthWest"};
 
     void Awake () {
-		playerController = GetComponent<PlayerController>();
 		animator = GetComponent<Animator>();
 		sprite = transform.Find ("Sprite");
 	}
@@ -49,10 +48,10 @@ public class EightWayMovingAnimation : MonoBehaviour {
 			{
                 animator.Play(movingAnimations[sector]);
             }
-            else if (state == PlayerState.Melee)
-            {
-                animator.Play(meleeAnimations[sector]);
-            }
+            //else if (state == PlayerState.Melee)
+            //{
+            //    animator.Play(meleeAnimations[sector]);
+            //}
         }
 
         lastPlayerState = state;

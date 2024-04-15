@@ -14,11 +14,10 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     public bool canAttack = true;
     float attackTimer;
-    EightWayMovingAnimation animationMover;
+    public EightWayMovingAnimation animationMover;
 
     void Start()
     {
-        animationMover = GetComponent<EightWayMovingAnimation>();
         usedWeapon = weapon.melee;
         attackTimer = defAtkSpeed;
     }

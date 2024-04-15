@@ -6,9 +6,7 @@ using UnityEngine;
 public enum PlayerState
 {
     Idle,
-    Moving,
-    Shooting,
-    Melee
+    Moving
 }
 
 public class PlayerController : MonoBehaviour
