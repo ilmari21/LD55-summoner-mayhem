@@ -8,9 +8,11 @@ public class CivilianScript : MonoBehaviour, IDamageable
     int health;
     public List<GameObject> enemiesComing = new List<GameObject>();
     EnemyManager enemyManager;
+    GameManager gameManager;
 
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
         enemyManager = FindObjectOfType<EnemyManager>();
         health = staringHealth;
         enemyManager.civilians.Add(gameObject);
@@ -23,6 +25,7 @@ public class CivilianScript : MonoBehaviour, IDamageable
             enemyManager.civilians.Remove(gameObject);
             enemyManager.UpdateCivilians();
             Destroy(gameObject);
+            gameManager.GameOver();
         }
 
         for (int i = 0; i < enemiesComing.Count; i++)

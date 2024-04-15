@@ -37,7 +37,7 @@ public class EightWayMovingAnimation : MonoBehaviour {
         float shortestAngle = Vector3.Angle (Vector3.up, d);
 		float clockwiseAngle = d.x >= 0 ? shortestAngle : 360 - shortestAngle;
 		int sector = ((int)(clockwiseAngle + 22.5f) % 360) / 45;
-		print(sector);
+		//print(sector);
 
 		//bool nowMoving = Vector3.Distance (transform.position, lastPosition) > Mathf.Epsilon;
 
