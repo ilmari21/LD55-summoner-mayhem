@@ -731,51 +731,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5184663434924953070, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3589345284069922690, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1477455082}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
---- !u!1 &1477455081 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3589345284069922690, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
-  m_PrefabInstance: {fileID: 1477455080}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1477455082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477455081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93fdabfc1bc7dfb42aa1bb804e611b14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idleAnimations:
-  - Paladin_Gun_Idle_North
-  - Paladin_Gun_Idle_NorthEast
-  - Paladin_Gun_Idle_East
-  - Paladin_Gun_Idle_SouthEast
-  - Paladin_Gun_Idle_South
-  - Paladin_Gun_Idle_SouthWest
-  - Paladin_Gun_Idle_West
-  - Paladin_Gun_Idle_NorthWest
-  movingAnimations:
-  - Paladin_Gun_Run_North
-  - Paladin_Gun_Run_NorthEast
-  - Paladin_Gun_Run_East
-  - Paladin_Gun_Run_SouthEast
-  - Paladin_Gun_Run_South
-  - Paladin_Gun_Run_SouthWest
-  - Paladin_Gun_Run_West
-  - Paladin_Gun_Run_NorthWest
-  shootingAnimations: []
-  meleeAnimations: []
 --- !u!114 &1598291529 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6288919638888249637, guid: a1776e741b156474b963d680389e832a, type: 3}
