@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
         playerCon = FindObjectOfType<PlayerController>();
         levelIndex = 0;
         StartLevel();
+        AudioFW.PlayLoop("Music");
     }
 
     void Update() {

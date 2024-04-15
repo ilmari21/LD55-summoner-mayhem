@@ -33,6 +33,7 @@ public class CivilianScript : MonoBehaviour, IDamageable
     {
         if (health <= 0) {
             print("Game Over");
+            AudioFW.Play("CivilianDie");
             enemyManager.civilians.Remove(gameObject);
             enemyManager.UpdateCivilians();
             Destroy(gameObject);

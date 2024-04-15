@@ -298,6 +298,8 @@ MonoBehaviour:
   moveSpeed: 2
   knockBack: 10
   invulnerable: 0
+  enemiesComing: []
+  playerState: 0
 --- !u!114 &752715233346622929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +316,7 @@ MonoBehaviour:
   usedWeapon: 0
   defAtkDmg: 5
   defAtkSpeed: 0.2
-  shootAtkSpeed: 0.3
+  shootAtkSpeed: 0.1
   projectilePrefab: {fileID: 8649325589785130359, guid: 587a2c82793b32840801e26cf9e2ee8f, type: 3}
   canAttack: 1
 --- !u!114 &2092391256838806635
@@ -340,27 +342,8 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3589345284069922690}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93fdabfc1bc7dfb42aa1bb804e611b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingAnimations:
-  - Paladin_Gun_Run_North
-  - Paladin_Gun_Run_NorthEast
-  - Paladin_Gun_Run_East
-  - Paladin_Gun_Run_SouthEast
-  - Paladin_Gun_Run_South
-  - Paladin_Gun_Run_SouthWest
-  - Paladin_Gun_Run_West
-  - Paladin_Gun_Run_NorthWest
-  idleAnimations:
-  - Paladin_Gun_Idle_North
-  - Paladin_Gun_Idle_NorthEast
-  - Paladin_Gun_Idle_East
-  - Paladin_Gun_Idle_SouthEast
-  - Paladin_Gun_Idle_South
-  - Paladin_Gun_Idle_SouthWest
-  - Paladin_Gun_Idle_West
-  - Paladin_Gun_Idle_NorthWest
-  attackAnimations: []

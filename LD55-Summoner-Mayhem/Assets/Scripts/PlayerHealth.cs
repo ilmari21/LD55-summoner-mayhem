@@ -37,6 +37,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public void Damage(int damage) {
         if (playerCon.invulnerable == false) {
             health -= damage;
+            AudioFW.Play("PlayerTakesDmg");
             UpdateHealthBar();
         }
     }

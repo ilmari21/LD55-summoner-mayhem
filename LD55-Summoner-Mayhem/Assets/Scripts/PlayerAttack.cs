@@ -46,6 +46,11 @@ public class PlayerAttack : MonoBehaviour
         } else if (Input.GetKey(KeyCode.Mouse0) && canAttack && usedWeapon == weapon.shooting) {
             ShootingAttack(shootAtkSpeed);
         }
+        if (Input.GetKey(KeyCode.Mouse0) && usedWeapon == weapon.shooting) {
+            AudioFW.PlayLoop("Gunfire");
+        } else {
+            AudioFW.StopLoop("Gunfire");
+        }
 
         if (canAttack == false) {
             attackTimer -= Time.deltaTime;
@@ -59,7 +64,10 @@ public class PlayerAttack : MonoBehaviour
         if (enemyList.Count > 0) {
             foreach (var enemy in enemyList) {
                 enemy.Damage(damage);
+                AudioFW.Play("SwordHit");
             }
+        } else {
+            AudioFW.Play("SwordMiss");
         }
         attackTimer = speed;
         canAttack = false;

@@ -44,6 +44,7 @@ public class SceneLoaderScript : MonoBehaviour
 
     public void PauseGame()
     {
+        AudioFW.StopLoop("Music");
         Time.timeScale = 0f;
         pauseGame.gameObject.SetActive(false);
         resumeGame.gameObject.SetActive(true);
@@ -51,6 +52,7 @@ public class SceneLoaderScript : MonoBehaviour
     }
     public void ResumeGame()
     {
+        AudioFW.PlayLoop("Music");
         backToMenu.gameObject.SetActive(false);
         resumeGame.gameObject.SetActive(false);
         Time.timeScale = 1f;
