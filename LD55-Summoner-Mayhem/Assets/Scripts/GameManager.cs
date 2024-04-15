@@ -10,12 +10,14 @@ public class GameManager : MonoBehaviour
     bool midLevel;
     public List<GameObject> levels;
     public List<GameObject> summoners;
+    SceneLoaderScript sceneLoader;
     [SerializeField] EnemyManager enemyManager;
     PlayerController playerCon;
     [SerializeField] TMP_Text levelText;
 
 
     void Start() {
+        sceneLoader = FindObjectOfType<SceneLoaderScript>();
         playerCon = FindObjectOfType<PlayerController>();
         levelIndex = 0;
         StartLevel();
@@ -38,6 +40,7 @@ public class GameManager : MonoBehaviour
     public void GameOver() {
         //Game Over Stuff
         Debug.Log("Game Over");
+        sceneLoader.GameOver();
     }
 
     public void LoadNextLevel() {
