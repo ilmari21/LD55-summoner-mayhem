@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    int levelIndex;
+    [SerializeField] int levelIndex;
     [SerializeField] GameObject midLevelUi;
     bool midLevel;
     public List<GameObject> levels;
@@ -50,7 +51,8 @@ public class GameManager : MonoBehaviour
         levels[levelIndex].SetActive(false);
         levelIndex++;
         if (levelIndex >= levels.Count) {
-            Debug.Log("No more levels");
+            sceneLoader.GameWin();
+            return;
         }
         midLevel = true;
         midLevelUi.SetActive(true);

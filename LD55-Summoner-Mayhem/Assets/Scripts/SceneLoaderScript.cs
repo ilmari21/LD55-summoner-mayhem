@@ -8,6 +8,8 @@ public class SceneLoaderScript : MonoBehaviour
 {
     public Canvas uiCanvas;
 
+    [SerializeField] GameObject audioFw;
+
     //public Button startGame, pauseGame, resumeGame, backToMenu;
 
     //public Image backGround;
@@ -20,6 +22,9 @@ public class SceneLoaderScript : MonoBehaviour
 
     [SerializeField] GameObject gameOver;
 
+    [SerializeField] GameObject gameWin;
+
+
     void Awake()
     {
         mainMenu.SetActive(true);
@@ -27,6 +32,7 @@ public class SceneLoaderScript : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(uiCanvas);
+        DontDestroyOnLoad(audioFw);
         //startGame.gameObject.SetActive(true);
         //pauseGame.gameObject.SetActive(false);
         //resumeGame.gameObject.SetActive(false);
@@ -36,6 +42,7 @@ public class SceneLoaderScript : MonoBehaviour
 
     public void StartGame()
     {
+        AudioFW.Play("Select");
         mainMenu.SetActive(false);
         //startGame.gameObject.SetActive(false);
         //backGround.gameObject.SetActive(false);
@@ -45,6 +52,7 @@ public class SceneLoaderScript : MonoBehaviour
 
     public void GameOver()
     {
+        AudioFW.StopLoop("Music");
         gameOver.SetActive(true);
         //backToMenu.gameObject.SetActive(true);
         //backGround.gameObject.SetActive(true);
@@ -55,6 +63,7 @@ public class SceneLoaderScript : MonoBehaviour
 
     public void PauseGame()
     {
+        AudioFW.Play("Select");
         AudioFW.StopLoop("Music");
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
@@ -64,6 +73,7 @@ public class SceneLoaderScript : MonoBehaviour
     }
     public void ResumeGame()
     {
+        AudioFW.Play("Select");
         AudioFW.PlayLoop("Music");
         pauseMenu.SetActive(false);
         //backToMenu.gameObject.SetActive(false);
@@ -73,9 +83,11 @@ public class SceneLoaderScript : MonoBehaviour
 
     public void BackToMenu()
     {
+        AudioFW.Play("Select");
         pauseMenu.SetActive(false);
         mainMenu.SetActive(true);
         gameOver.SetActive(false);
+        gameWin.SetActive(false);
 
         //pauseGame.gameObject.SetActive(false);
         //resumeGame.gameObject.SetActive(false);
@@ -87,7 +99,14 @@ public class SceneLoaderScript : MonoBehaviour
         Time.timeScale = 0f;
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void GameWin() {
+        SceneManager.LoadScene("GameWin");
+        gameWin.SetActive(true);
+    }
+
     public void QuitGame() {
+        AudioFW.Play("Select");
         Application.Quit();
         Debug.Log("Quitting Game...");
     }
