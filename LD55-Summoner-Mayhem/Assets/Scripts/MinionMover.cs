@@ -12,8 +12,14 @@ public class MinionMover : MonoBehaviour
 
     EnemyManager enemyManager;
 
+    bool targettingPlayer;
+
+    PlayerController player;
+
     private void Awake()
     {
+        player = FindObjectOfType<PlayerController>();
+
         enemyManager = FindObjectOfType<EnemyManager>();
 
         enemyManager.enemies.Add(gameObject);
@@ -22,7 +28,16 @@ public class MinionMover : MonoBehaviour
 
         target = enemyManager.GetNearestCiv(transform.position);
 
-        target.GetComponent<CivilianScript>().enemiesComing.Add(gameObject);
+        if (target == player.gameObject)
+        {
+            targettingPlayer = true;
+            target.GetComponent<PlayerController>().enemiesComing.Add(gameObject);
+        }
+
+        else
+        {
+            target.GetComponent<CivilianScript>().enemiesComing.Add(gameObject);
+        }
 
         agent.SetDestination(target.transform.position);
 
@@ -30,6 +45,11 @@ public class MinionMover : MonoBehaviour
 
     void Update()
     {
+        if (targettingPlayer)
+        {
+            agent.SetDestination(player.transform.position);
+        }
+
         var fixPos = new Vector3(transform.position.x, transform.position.y, 0);
         transform.position = fixPos;
     }

@@ -7,8 +7,16 @@ public class EnemyManager : MonoBehaviour
 {
     public List<GameObject> civilians = new List<GameObject>();
     public List<GameObject> enemies = new List<GameObject>();
+    int random = 0;
+    public int randomizer = 0;
+
+    PlayerController player;
+
     void Start()
     {
+        player = FindObjectOfType<PlayerController>();
+        randomizer = UnityEngine.Random.Range(1, 5);
+
         //var civs = FindObjectsOfType<CivilianScript>();
         //foreach (var civ in civs) {
         //    civilians.Add(civ.gameObject);
@@ -46,7 +54,14 @@ public class EnemyManager : MonoBehaviour
                 index = i;
             }
         }
+        random += 1;
         print("nearest civ run" + civilians[index]);
+        if (random >= randomizer)
+        {
+            random = 0;
+            randomizer = UnityEngine.Random.Range(1, 5);
+            return player.gameObject;
+        }
         return civilians[index];
     }
 }
