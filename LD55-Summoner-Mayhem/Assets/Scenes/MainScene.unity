@@ -697,9 +697,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 752715233346622929, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: defAtkDmg
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 752715233346622929, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: defAtkSpeed
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 752715233346622929, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: animationMover
       value: 
       objectReference: {fileID: 2013561589891885178}
+    - target: {fileID: 967996308039962539, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 967996308039962539, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 967996308039962539, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1619239171512306562, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: moveSpeed
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 2092391256838806635, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: healthSlider
       value: 
@@ -707,6 +731,18 @@ PrefabInstance:
     - target: {fileID: 3589345284069922690, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830559724715374651, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830559724715374651, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830559724715374651, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: m_Offset.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1300,6 +1336,18 @@ PrefabInstance:
     - target: {fileID: 3696385409535221029, guid: 95711766f44fd2b488e92e24c9df4e75, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160679343941376036, guid: 95711766f44fd2b488e92e24c9df4e75, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160679343941376036, guid: 95711766f44fd2b488e92e24c9df4e75, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160679343941376036, guid: 95711766f44fd2b488e92e24c9df4e75, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8295964483660700257, guid: 95711766f44fd2b488e92e24c9df4e75, type: 3}
       propertyPath: playerController

@@ -53,6 +53,7 @@ public class SceneLoaderScript : MonoBehaviour
     public void GameOver()
     {
         AudioFW.StopLoop("Music");
+        AudioFW.StopLoop("Gunfire");
         gameOver.SetActive(true);
         //backToMenu.gameObject.SetActive(true);
         //backGround.gameObject.SetActive(true);

@@ -8,7 +8,7 @@ public class SummonerScript : MonoBehaviour
     public List<GameObject> spawnList = new List<GameObject>();
     public int maxMinions = 5;
     [SerializeField] float spawnInterval = 2f;
-    float spawnTimer = 0f;
+    float spawnTimer = 3f;
     public Transform minionsFolder;
 
 
