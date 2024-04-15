@@ -77,7 +77,7 @@ public class PlayerAttack : MonoBehaviour
         }
         print(hit.collider.gameObject);
         Debug.DrawRay(transform.position, transform.up * Vector3.Distance(transform.position, hit.collider.transform.position), Color.red, 1.0f);
-        if (hit.collider.gameObject.layer == 7) {
+        if (hit.collider.gameObject.layer == 7 && canAttack) {
             print("Shoot");
             print(hit.collider.gameObject);
             var enemyDamage = hit.collider.GetComponent<IDamageable>();
