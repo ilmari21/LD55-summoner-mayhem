@@ -700,6 +700,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1619239171512306562, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
+      propertyPath: moveSpeed
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 2092391256838806635, guid: 7b988594d6941364fa7af5fbb4661b2d, type: 3}
       propertyPath: healthSlider
       value: 
