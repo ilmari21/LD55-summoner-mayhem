@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
         var move = new Vector2 (xInput, yInput);
         //rb.velocity = move * moveSpeed;
         rb.AddForce (move.normalized * moveSpeed,ForceMode2D.Impulse);
+    }
+
+    void Update() {
         var mouseCoords = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         var lookVector = new Vector3(mouseCoords.x, mouseCoords.y, 0);
         transform.up = lookVector - transform.position;
