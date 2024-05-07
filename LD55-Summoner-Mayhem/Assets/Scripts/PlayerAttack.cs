@@ -24,32 +24,24 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            if (usedWeapon == weapon.melee) {
-                canAttack = true;
-                usedWeapon = weapon.shooting;
-            } else if (usedWeapon == weapon.shooting) {
-                canAttack = true;
-                usedWeapon = weapon.melee;
-            }
-        }
-
-        //if (Input.GetKeyDown(KeyCode.Mouse0) && canAttack) {
+        //if (Input.GetKeyDown(KeyCode.Space)) {
         //    if (usedWeapon == weapon.melee) {
-        //        DefaultAttack(defAtkDmg, defAtkSpeed);
+        //        canAttack = true;
+        //        usedWeapon = weapon.shooting;
         //    } else if (usedWeapon == weapon.shooting) {
-        //        ShootingAttack(shootAtkSpeed);
+        //        canAttack = true;
+        //        usedWeapon = weapon.melee;
         //    }
         //}
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && canAttack && usedWeapon == weapon.melee) {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && canAttack) {
             DefaultAttack(defAtkDmg, defAtkSpeed);
             animationMover.animator.Play(animationMover.meleeAnimations[animationMover.publicSector]);
             animationMover.Invoke("EndAnimation", 0.24f);
-        } else if (Input.GetKey(KeyCode.Mouse0) && canAttack && usedWeapon == weapon.shooting) {
+        } else if (Input.GetKey(KeyCode.Mouse1) && canAttack) {
             ShootingAttack(shootAtkSpeed);
         }
-        if (Input.GetKey(KeyCode.Mouse0) && usedWeapon == weapon.shooting) {
+        if (Input.GetKey(KeyCode.Mouse1)) {
             AudioFW.PlayLoop("Gunfire");
         } else {
             AudioFW.StopLoop("Gunfire");
