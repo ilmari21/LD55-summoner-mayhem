@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 8130911945973015946}
   - component: {fileID: 6409528146292692572}
   - component: {fileID: 1719835576829705692}
+  - component: {fileID: 7515241545157125498}
   m_Layer: 7
   m_Name: Minion2
   m_TagString: Untagged
@@ -264,3 +265,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8785010fd28d63141a13231002dcb3dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7515241545157125498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3275601621936933893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db194b0b5705e9d479c2d91046315119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  movingAnimations:
+  - Fallen_Knight_North
+  - Fallen_Knight_East
+  - Fallen_Knight_South
+  - Fallen_Knight_West
