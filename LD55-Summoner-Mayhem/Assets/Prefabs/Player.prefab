@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f55adee395c941a478210054f785c88e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.8
+  moveSpeed: 1
   knockBack: 12
   invulnerable: 0
   enemiesComing: []
@@ -233,6 +233,7 @@ MonoBehaviour:
   shootAtkSpeed: 0.1
   projectilePrefab: {fileID: 8649325589785130359, guid: 587a2c82793b32840801e26cf9e2ee8f, type: 3}
   canAttack: 1
+  animationMover: {fileID: 0}
 --- !u!114 &2092391256838806635
 MonoBehaviour:
   m_ObjectHideFlags: 0

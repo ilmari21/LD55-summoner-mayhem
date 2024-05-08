@@ -40,9 +40,7 @@ public class PlayerController : MonoBehaviour
         if (rb.velocity != Vector2.zero)
         {
             playerState = PlayerState.Moving;
-        }
-        else if (rb.velocity == Vector2.zero)
-        {
+        } else if (rb.velocity == Vector2.zero) {
             playerState = PlayerState.Idle;
         }
     }

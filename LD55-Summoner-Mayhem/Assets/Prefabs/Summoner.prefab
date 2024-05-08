@@ -49,8 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 3275601621936933893, guid: f99df824647ef2e4ab528ac03cd94483, type: 3}
   spawnList: []
-  maxMinions: 4
-  spawnInterval: 5
+  maxMinions: 6
+  spawnInterval: 3
   minionsFolder: {fileID: 0}
 --- !u!114 &1101950972646071089
 MonoBehaviour:
