@@ -1418,6 +1418,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4160679343941376036, guid: 95711766f44fd2b488e92e24c9df4e75, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a33cecf85c3ca54cad805876a4fc848, type: 2}
     - target: {fileID: 8295964483660700257, guid: 95711766f44fd2b488e92e24c9df4e75, type: 3}
       propertyPath: playerController
       value: 
