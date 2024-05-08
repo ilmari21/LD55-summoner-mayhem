@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class FourWayMovingAnimation : MonoBehaviour {
-	int lastAnimSector;
+	int lastAnimSector = -1;
 
 	public Animator animator;
 

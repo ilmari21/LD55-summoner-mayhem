@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &6059205788988555963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,8 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8e39eef65e9f442998da7f5b0660a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  spriteRend: {fileID: 0}
 --- !u!61 &5293765343480917464
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,8 +136,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2, y: 1.7666667}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -278,8 +276,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  movingAnimations:
-  - Fallen_Knight_North
-  - Fallen_Knight_East
-  - Fallen_Knight_South
-  - Fallen_Knight_West

@@ -93,6 +93,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -101,11 +114,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 60
+        y: 65
         width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +134,12 @@ TextureImporter:
       name: Fallen_Knight_West_1
       rect:
         serializedVersion: 2
-        x: 60
-        y: 60
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 65
+        y: 65
+        width: 47
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,12 +155,12 @@ TextureImporter:
       name: Fallen_Knight_West_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2
+        y: 4
+        width: 57
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,12 +176,12 @@ TextureImporter:
       name: Fallen_Knight_West_3
       rect:
         serializedVersion: 2
-        x: 60
-        y: 0
-        width: 60
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 65
+        y: 3
+        width: 55
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
